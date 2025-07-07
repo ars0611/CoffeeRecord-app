@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <dev class="site-title"><a href="{{ route('index') }}" class="site-title">コーヒーログ</a></div>
+        <dev class="site-title"><a href="{{ route('coffee_records.index') }}" class="site-title">コーヒーログ</a></div>
         <nav class="tab">
             <ul>
                 @if(Auth::check())

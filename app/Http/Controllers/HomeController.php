@@ -14,6 +14,6 @@ class HomeController extends Controller
         $data = [
             'coffee_records' => $coffee_records,
         ];
-        return view('home',$data);
+        return view('coffee_records.home',$data);
     }
 }
