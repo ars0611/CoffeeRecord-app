@@ -1,4 +1,4 @@
-extends('layouts.app')
+@extends('layouts.app')
 @section('content')
 @include('commons.errors')
 <h1 class="page-heading">マイページ</h1>

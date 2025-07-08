@@ -12,7 +12,7 @@
     <div class="coffee_record-rating">５段階評価：{{ $coffee_record->rating }}</div>
     <div class="coffee_record-impression">感想：{!! nl2br(e($coffee_record->impression)) !!}</div>
     <div class="coffee_record-info">登録日時：{{ $coffee_record->created_at }}</div>
-    @can('updata', $coffee_record)
+    @can('update', $coffee_record)
     <div class="coffee_record-controll">
         <a href="{{ route('coffee_records.edit', $coffee_record) }}">編集</a>
         <form onsubmit="return confirm('本当に削除しますか？')" action="{{ route('coffee_records.destroy', $coffee_record)}}" method="post">
